@@ -1,0 +1,96 @@
+.Static{
+    .manbaner__contant{
+        width: 35%;
+        height: 498px;
+    }
+    span{
+        display: block;
+font-weight: 700;
+font-size: 16px;
+line-height: 187%;
+color: #5fb4a2;
+padding-bottom: 16px;
+    }
+    span:nth-last-of-type(1){
+        padding-bottom: 32px;
+    }
+&__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 193px;
+}
+.prew{
+    margin-bottom: 64px;
+    width: 48%;
+    h1{
+font-weight: 400;
+font-size: 32px;
+line-height: 131%;
+letter-spacing: -0.01em;
+color: #33323d;
+padding-bottom: 28px;
+    }
+    p{
+font-weight: 400;
+font-size: 15px;
+line-height: 200%;
+color: #33323d;
+padding-bottom: 40px;
+    }
+    img:nth-last-of-type(2){
+        margin-bottom: 32px;
+    }
+}
+}
+@media (max-width:688px) {
+    .Static__wrapper {
+        display: grid;
+        gap: 0px;
+    }
+   .Static .manbaner__contant p {
+        width: 49%;
+        top: 8%;
+        position: absolute;
+        left: 53%;
+    }
+    .Static .manbaner__contant {
+        position: relative;
+        width: 100%;
+    }
+    .Static .manbaner__contant {
+        height: 315px;
+    }
+    .Static .prew {
+        margin-bottom: 0px; 
+         width: 100%; 
+         margin-top: 40px;
+    }
+}
+@media (max-width:660px) {
+    .Static span {
+        width: 52%;
+    }
+}
+@media (max-width:360px) {
+    .Static .manbaner__contant {
+        height: 360px;
+    }
+}
+@media (max-width:311px) {
+        .Static .manbaner__contant p {
+            position: relative;
+            width: 100%;
+             left: 0%; 
+             margin-bottom: 24px;
+        }
+        .manbaner__contant h1 {
+    padding-bottom: 0px;
+}
+.Static .manbaner__contant {
+    height: 555px;
+}
+.Static span {
+    width: 100%;
+}
+    
+}

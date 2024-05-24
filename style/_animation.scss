@@ -1,0 +1,64 @@
+.animation{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #33323d4f;
+        border-bottom: 1px solid #33323d4f;
+        margin-bottom: 115px;
+        .koob{
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            h1{
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 112%;
+                letter-spacing: -0.01em;
+                color: #33323D;
+            }
+            p{
+font-weight: 400;
+font-size: 16px;
+line-height: 187%;
+color: #33323d;
+opacity: 0.5;
+            }
+        }
+        .boob{
+            display: flex;
+            align-items: center;
+            gap: 32px; 
+            h1{
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 112%;
+                letter-spacing: -0.01em;
+                color: #33323d;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 187%;
+                color: #33323d;
+                opacity: 0.5;
+            }
+        }
+    }
+    
+}
+@media (max-width:311px) {
+    .animation__wrapper .boob h1 {
+        font-size: 20px;
+    }
+    .animation__wrapper .koob h1 {
+    font-size: 20px;
+}
+.animation__wrapper .koob p {
+    font-size: 10px;
+    opacity: 0.5;
+}
+.animation__wrapper .boob p {
+    font-size: 10px;
+}
+}

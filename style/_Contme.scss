@@ -1,0 +1,94 @@
+.Contme{
+    margin-bottom: 109px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        h1{
+font-weight: 700;
+font-size: 40px;
+line-height: 105%;
+letter-spacing: -0.01em;
+color: #33323d;
+        }
+    }
+    &__contant{
+        width: 57%;
+        .form{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            label{
+font-weight: 700;
+font-size: 13px;
+line-height: 231%;
+color: #33323d;
+            }
+            input{
+                height: 48px;
+                background: #E6E6E7;
+                border:none;
+                font-size: 13px;
+                padding-left: 16px;
+                
+            }
+           
+            ::placeholder{
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 231%;
+                color: #9E9EA4;
+            }
+            
+            textarea{
+                height: 96px;
+                background: #E6E6E7;
+                border:none;
+                padding-left: 16px;
+                padding-top: 9px;
+                margin-bottom: 24px;
+                font-weight: 400;
+                    font-size: 13px;
+                    line-height: 231%;
+                ::placeholder{
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 231%;
+                    color: #9E9EA4;
+                }
+               
+            }
+        }
+        button{
+width: 200px;
+height: 48px;
+background: #203a4c;
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+border: none;
+        } button:hover{
+                background: #5fb4a2;
+                transition: 0.10ms;
+        }
+    }
+}
+
+@media (max-width:688px){
+    .Contme__wrapper {
+        flex-direction: column;
+        
+     }
+     .Contme__wrapper h1 {
+    margin-bottom: 32px;
+    }
+    .Contme__contant {
+        width: 99%;
+    }
+}
+@media (max-width:688px) {
+    .Contme__contant .form input {
+        margin-bottom: 24px;
+    }
+}

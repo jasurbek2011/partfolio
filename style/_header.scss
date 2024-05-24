@@ -1,0 +1,112 @@
+.header{
+    margin: 64px auto 6px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .burger{
+            display: none;
+        }
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 42px;
+        li{
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+color: #33323d;
+        }
+        li:hover{
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+color: #5fb4a2;
+        }
+    }
+}
+.headed{
+    margin: 64px auto 121px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 42px;
+        li{
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+color: #33323d;
+        }
+        li:hover{
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+color: #5fb4a2;
+        }
+    }
+}
+@media (max-width:688px) {
+    .headed {
+        margin: 64px auto 90px;
+    }
+}
+@media (max-width:397px) {
+    .header .list {
+        gap: 10px;
+    }
+}
+@media (max-width:336px) {
+    .header .list li {
+        font-size: 10px;
+    }
+    .header__wrapper img{
+        width: 15%;
+    }
+}
+@media (max-width:311px) {
+    .header .list {
+        display: none;
+    }
+   .header img:nth-last-of-type(1){
+        display: block;
+        width: 10%;
+    }
+}
+//headed
+@media (max-width:392px) {
+    .headed .list {
+        gap: 10px;
+    }
+    .headed .list li {
+        font-size: 10px;
+    }
+}
+@media (max-width:340px) {
+ .manbaner .manbaner__wrapped {
+        gap: 5px;
+    }
+   .manbaner .manbaner__wrappet {
+        gap: 5px;
+    }
+}
+@media (max-width:311px) {
+    .headed .list {
+        display: none;
+    }
+    .headed img:nth-last-of-type(1){
+        display: block;
+        width: 10%;
+    }
+}

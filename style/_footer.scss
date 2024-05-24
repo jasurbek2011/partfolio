@@ -1,0 +1,100 @@
+.footer{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #33323D;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .lis1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 42px;
+            li{
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+color: #fff;
+            }
+            li:hover{
+                color: #5fb4a2;
+            }
+        }
+        .dip{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+        }
+    }
+}
+@media (max-width:550px) {
+    .footer__wrapper .dip {
+        gap: 12px;
+    }
+}
+@media (max-width:515px) {
+    .footer__wrapper .lis1 {
+        gap: 15px;
+    }
+}
+@media (max-width:460px) {
+    .footer__wrapper .lis1 li {
+        font-size: 10px;
+    }
+}
+@media (max-width:420px) {
+   .footer__wrapper .dip img{
+        width: 15%;
+    }
+    .footer__wrapper .img img{
+        width: 65%;
+    }
+    .footer__wrapper .img {
+        gap: 0px;
+    }
+}
+@media (max-width:361px) {
+    .footer__wrapper .dip {
+        gap: 2px;
+    }
+    .footer__wrapper .lis1 {
+        gap: 8px;
+    }
+}
+@media (max-width:335px) {
+    .footer__wrapper .lis1 li {
+        font-size: 8px;
+    }
+
+}
+@media (max-width:311px) {
+    .footer__wrapper {
+        text-align: center;
+grid-template-columns: repeat(1,1fr);
+        display: grid;
+    }
+    
+    .footer__wrapper .lis1 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer__wrapper .lis1 li {
+        padding-bottom: 32px;
+    }
+    .footer__wrapper .dip {
+        display: block;
+    }
+    .footer__wrapper .dip img {
+        width: 20%;
+        padding-bottom: 40px;
+    }
+}

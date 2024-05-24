@@ -1,0 +1,65 @@
+.projekt{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 40%;
+        }
+        h1{
+            width: 33%;
+font-weight: 700;
+font-size: 40px;
+line-height: 105%;
+letter-spacing: -0.01em;
+color: #33323d;
+        }
+        button{
+            border: 1px solid #33323d;
+            width: 202px;
+            background-color: #fff;
+            height: 48px;
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+            color: #33323d;
+                    }
+                    button:hover{
+                        background: #203a4c;
+                        transition: 0.10ms;
+                        background: #00000029;
+                        color: black;       
+                    }
+    }
+    margin-bottom: 150px;
+}
+@media (max-width:688px) {
+    .projekt__wrapper h1 {
+        width: 100%;
+    }
+    .projekt__wrapper img {
+        width: 12%;
+    }
+}
+@media (max-width:450px) {
+    .projekt__wrapper button {
+        width: 120px;
+    }
+}
+@media (max-width:311px) {
+    .projekt__wrapper {
+    display: grid;
+    text-align: center;
+    }
+    .projekt__wrapper h1 {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .projekt__wrapper button {
+        width: 202px;
+    }
+    .projekt {
+        margin-bottom: 80px;
+    }
+}
